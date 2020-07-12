@@ -1,0 +1,59 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+th,
+td {
+	border-bottom: 1px solid black;
+}
+
+th {
+	background-color: #0f4c81;
+	color: #fff;
+	padding: 5px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+button {
+	background-color: #b6d8f6;
+	cursor: pointer;
+	padding: 10px 20px;
+	border: none;
+	margin-right: 3px;
+}
+
+table {
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.new-contact {
+	display: none;
+	position: fixed;
+	z-index: 9;
+	bottom: 50px;
+}
+
+.form-box {
+	max-width: 500px;
+	padding: 10px;
+	background-color: #fff;
+	border: 3px solid #489eea;
+}
+
+.form-box input {
+	width: 90%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+.form-box input:focus {
+	outline: none;
+	background: #ddd;
+}

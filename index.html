@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Contacts app</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+   </head>
+   <body onload="showContacts()">
+      <script src="app.js"></script>
+      <main>
+         <div class="new-contact" id="new-contact" style="display:none">
+            <form onsubmit="submitForm(); return false" id="form" class="form-box">
+               <input id="firstName" type="text" placeholder="First name" required>
+               <input id="lastName" type="text" placeholder="Last name"  required>
+               <label>Date of birth</label><input id="dateOfBirth" type="date" required>
+               <input id="phoneNumber" type="text" placeholder="Phone number" required>
+               <input id="email" type="text" placeholder="E-mail" required>
+               <input id="address" type="text" placeholder="Address">
+               <button class="button" type="submit">Submit</button>
+               <button class="button" type="button" onclick="closeForm()">Close</button>
+            </form>
+         </div>
+         <div>
+            <h2>All contacts catalog</h2>
+            <table style="width:100%" id="contactsTable">
+               <tr>
+                  <th onclick="sortTable(0, false)">First name</th>
+                  <th onclick="sortTable(1, false)">Last name</th>
+                  <th onclick="sortTable(2, false)">Date of birth</th>
+                  <th onclick="sortTable(3, false)">Phone number</th>
+                  <th onclick="sortTable(4, false)">E-mail</th>
+                  <th onclick="sortTable(5, false)">Address</th>
+               </tr>
+            </table>
+         </div>
+         <button class="button" id="addNew" onclick="openForm()">Add new</button>
+      </main>
+   </body>
+</html>
